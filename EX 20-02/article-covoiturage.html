@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Le covoiturage domicile-travail est une solution concrète pour réduire ses dépenses de transport. Avec des plateformes comme BlaBlaCar Daily, il est possible d'économiser jusqu'à 150 EUR par mois.">
+<title>Covoiturage domicile-travail : économise jusqu'à 150 EUR par mois — La Ville Mode d'Emploi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a18;
+    --paper: #f7f4ee;
+    --accent: #c8401a;
+    --accent-light: #f0e8e0;
+    --mid: #6b6860;
+    --rule: #d4cfc5;
+    --col-width: 680px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { font-size: 18px; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.75;
+  }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    border-bottom: 2px solid var(--ink);
+    padding: 18px 40px 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+  }
+  .masthead-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .masthead-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: .72rem;
+    color: var(--mid);
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  /* ── RUBRIQUE ── */
+  .rubrique-bar {
+    background: var(--ink);
+    padding: 8px 40px;
+  }
+  .rubrique {
+    font-family: 'DM Sans', sans-serif;
+    font-size: .7rem;
+    font-weight: 500;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--paper);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 40px 0;
+  }
+
+  .meta-line {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .72rem;
+    color: var(--mid);
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .meta-line span { color: var(--rule); }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -.01em;
+    max-width: 820px;
+    margin-bottom: 24px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .standfirst {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.18rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #3a3a38;
+    max-width: 680px;
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+    margin-bottom: 48px;
+  }
+
+  /* ── IMAGE ── */
+  .article-image-wrap {
+    max-width: 1100px;
+    margin: 0 auto 0;
+    padding: 0 40px;
+  }
+  .article-image-wrap figure {
+    width: 100%;
+  }
+  .article-image-wrap img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    display: block;
+  }
+  figcaption {
+    font-family: 'DM Sans', sans-serif;
+    font-size: .7rem;
+    color: var(--mid);
+    letter-spacing: .03em;
+    padding: 10px 0 0;
+    border-top: 1px solid var(--rule);
+    margin-top: 0;
+  }
+
+  /* ── BODY ── */
+  .article-body {
+    max-width: var(--col-width);
+    margin: 0 auto;
+    padding: 52px 40px 80px;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.55rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 52px 0 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  p { margin-bottom: 1.3em; }
+
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* ── CALLOUT BOX ── */
+  .callout {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    padding: 20px 24px;
+    margin: 36px 0;
+    font-size: .95rem;
+  }
+  .callout .callout-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: .68rem;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  /* ── KEY FIGURES ── */
+  .key-figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--rule);
+    margin: 40px 0;
+    border: 1px solid var(--rule);
+  }
+  .kf-cell {
+    background: var(--paper);
+    padding: 24px 22px;
+  }
+  .kf-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .kf-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: .78rem;
+    color: var(--mid);
+    line-height: 1.4;
+  }
+
+  /* ── CROSSLINK ── */
+  .crosslink {
+    border-top: 2px solid var(--ink);
+    border-bottom: 2px solid var(--ink);
+    padding: 28px 0;
+    margin: 52px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .crosslink-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: .68rem;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .crosslink a {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.22rem;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+    line-height: 1.2;
+  }
+  .crosslink a:hover { color: var(--accent); }
+  .crosslink-arrow {
+    font-size: 1.6rem;
+    color: var(--accent);
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    color: var(--paper);
+    text-align: center;
+    padding: 28px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .72rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 640px) {
+    .masthead { padding: 14px 20px; flex-direction: column; gap: 4px; }
+    .rubrique-bar { padding: 8px 20px; }
+    .hero, .article-image-wrap { padding-left: 20px; padding-right: 20px; }
+    .article-image-wrap img { height: 240px; }
+    .article-body { padding: 36px 20px 60px; }
+    .key-figures { grid-template-columns: 1fr; }
+    h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <a href="#" class="masthead-title">La Ville Mode d'Emploi</a>
+  <span class="masthead-tagline">Guide pratique local pour jeunes actifs en ville</span>
+</header>
+
+<!-- RUBRIQUE -->
+<div class="rubrique-bar">
+  <span class="rubrique">Transport &amp; Mobilité</span>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="meta-line">
+    <time>11 mai 2026</time>
+    <span>|</span>
+    <span>5 min de lecture</span>
+    <span>|</span>
+    <span>Par la rédaction</span>
+  </div>
+
+  <h1>Covoiturage domicile-travail&nbsp;: économise <em>jusqu'à 150&nbsp;€</em> par mois</h1>
+
+  <p class="standfirst">Le covoiturage domicile-travail est sans doute l'une des alternatives les plus efficaces pour réduire ses frais de transport au quotidien. En France, 900&nbsp;000 personnes le pratiquent déjà chaque jour. Voici ce qu'il faut savoir pour se lancer.</p>
+</div>
+
+<!-- IMAGE -->
+<div class="article-image-wrap">
+  <figure>
+    <img
+      src="covoiturage.jpeg"
+      alt="Deux personnes partageant un trajet en voiture sur une route de banlieue"
+      width="1100"
+      height="460"
+    >
+    <figcaption>Partager son trajet quotidien permet de diviser les frais et de réduire son empreinte carbone. — Photo : Unsplash / Licence libre de droits</figcaption>
+  </figure>
+</div>
+
+<!-- BODY -->
+<article class="article-body">
+
+  <h2>Comprends pourquoi le covoiturage change vraiment les choses</h2>
+
+  <p>Pour commencer, il est important de rappeler ce qu'est concrètement le covoiturage domicile-travail. Il s'agit de <strong>partager un trajet avec une ou plusieurs personnes</strong> qui font le même chemin que toi pour aller au travail. Le principe permet de diviser les frais d'essence et de péage entre les participants.</p>
+
+  <div class="key-figures">
+    <div class="kf-cell">
+      <span class="kf-number">150&nbsp;€</span>
+      <span class="kf-label">d'économies par mois pour un trajet de 30&nbsp;km aller-retour</span>
+    </div>
+    <div class="kf-cell">
+      <span class="kf-number">1&nbsp;800&nbsp;€</span>
+      <span class="kf-label">d'économies annuelles sur les seuls frais de carburant</span>
+    </div>
+    <div class="kf-cell">
+      <span class="kf-number">800&nbsp;€</span>
+      <span class="kf-label">de Forfait Mobilités Durables possible selon l'employeur</span>
+    </div>
+    <div class="kf-cell">
+      <span class="kf-number">+2&nbsp;000&nbsp;€</span>
+      <span class="kf-label">d'économies totales annuelles en combinant les deux leviers</span>
+    </div>
+  </div>
+
+  <div class="callout">
+    <span class="callout-label">À noter</span>
+    Le barème standard est d'environ <strong>0,10&nbsp;€ par km</strong> pour le passager. Un trajet de 15&nbsp;km te revient donc à 1,50&nbsp;€. C'est bien moins cher qu'un abonnement aux transports en commun dans la plupart des grandes villes.
+  </div>
+
+  <h2>Utilise les bonnes plateformes pour trouver un trajet adapté</h2>
+
+  <p>Aujourd'hui, plusieurs applications facilitent la mise en relation entre conducteurs et passagers. <strong>BlaBlaCar Daily</strong> est probablement la plus connue. Elle propose un système de matching automatique&nbsp;: tu entres ton adresse de départ et d'arrivée, et l'algorithme te propose des personnes compatibles dans ton quartier.</p>
+
+  <p>Pour maximiser ses chances de trouver un trajet, il vaut mieux <strong>s'inscrire sur deux ou trois plateformes à la fois</strong>. <strong>Karos</strong> et <strong>Klaxit</strong> sont également de bonnes options, selon ta zone géographique. Certaines entreprises ont aussi des partenariats avec ces plateformes, ce qui peut donner accès à des avantages supplémentaires. Pense à te renseigner auprès de ton service RH.</p>
+
+  <!-- CROSSLINK -->
+  <div class="crosslink">
+    <div>
+      <span class="crosslink-eyebrow">À lire aussi</span>
+      <a href="article-colocation.html">Colocation en 2025&nbsp;: tout ce qu'il faut vérifier avant de signer — bail, caution, APL</a>
+    </div>
+    <span class="crosslink-arrow">→</span>
+  </div>
+
+</article>
+
+<footer>
+  © 2026 La Ville Mode d'Emploi — Tous droits réservés
+</footer>
+
+</body>
+</html>
